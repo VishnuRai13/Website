@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vever Consultancy</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Simple animation -->
+  <style>
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-zinc-950 text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md border-b border-zinc-800 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <div class="flex items-center gap-3">
+        <img src="logo.png" class="h-10" />
+        <span class="text-xl font-bold">Vever</span>
+      </div>
+
+      <div class="hidden md:flex gap-8 text-sm">
+        <a href="#services" class="hover:text-blue-400">Services</a>
+        <a href="#industries" class="hover:text-blue-400">Industries</a>
+        <a href="#values" class="hover:text-blue-400">Values</a>
+      </div>
+
+      <a href="#contact" class="bg-white text-black px-5 py-2 rounded-full hover:bg-blue-500 hover:text-white">
+        Connect Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center pt-20 text-center px-6 bg-gradient-to-br from-zinc-900 via-blue-950 to-zinc-900">
+    <div class="max-w-4xl">
+
+      <!-- Logo -->
+      <img src="logo.png" class="mx-auto mb-6 h-28 float"/>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        Strategic HR Partner.<br/>Talent That Drives Growth.
+      </h1>
+
+      <p class="text-lg text-zinc-400 mb-10">
+        Tailored recruitment • Payroll • Performance • End-to-End HR
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="bg-blue-600 px-8 py-3 rounded-xl hover:bg-blue-500">
+          Start Hiring Better
+        </a>
+        <a href="#services" class="border border-zinc-600 px-8 py-3 rounded-xl hover:bg-zinc-800">
+          Explore Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-zinc-900 text-center">
+    <h2 class="text-4xl font-bold mb-12">Our Services</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+      <div class="bg-zinc-800 p-6 rounded-2xl">Executive Recruitment</div>
+      <div class="bg-zinc-800 p-6 rounded-2xl">RPO</div>
+      <div class="bg-zinc-800 p-6 rounded-2xl">Manpower Outsourcing</div>
+      <div class="bg-zinc-800 p-6 rounded-2xl">Payroll Management</div>
+      <div class="bg-zinc-800 p-6 rounded-2xl">Performance Management</div>
+      <div class="bg-zinc-800 p-6 rounded-2xl">Hire to Retire</div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries" class="py-20 text-center">
+    <h2 class="text-4xl font-bold mb-10">Industry Experience</h2>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <div class="bg-zinc-800 px-5 py-2 rounded-xl">Infrastructure</div>
+      <div class="bg-zinc-800 px-5 py-2 rounded-xl">Oil & Gas</div>
+      <div class="bg-zinc-800 px-5 py-2 rounded-xl">Medical Devices</div>
+      <div class="bg-zinc-800 px-5 py-2 rounded-xl">Power</div>
+      <div class="bg-zinc-800 px-5 py-2 rounded-xl">Automobile</div>
+      <div class="bg-zinc-800 px-5 py-2 rounded-xl">Semiconductor</div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section id="values" class="py-20 bg-zinc-900 text-center px-6">
+    <h2 class="text-4xl font-bold mb-6">Our Values</h2>
+    <p class="text-zinc-400 max-w-2xl mx-auto">
+      Integrity, transparency, flexibility and accountability drive everything we do.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">Let’s Work Together</h2>
+
+    <p class="mb-2">📞 78499 21523</p>
+    <p>✉️ veverconsultancy@gmail.com</p>
+
+    <a href="tel:7849921523" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-xl hover:bg-blue-500 hover:text-white">
+      Call Now
+    </a>
+  </section>
+
+  <footer class="py-6 text-center text-sm text-zinc-500 border-t border-zinc-800">
+    © 2026 Vever Consultancy Solutions
+  </footer>
+
+</body>
+</html>
